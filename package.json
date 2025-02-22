@@ -1,0 +1,30 @@
+{
+  "name": "JavaScript Obfuscator Bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for code obfuscation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^4.1.2",
+    "js-confuser": "^1.7.3",
+    "telegraf": "^4.16.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "obfuscation"
+  ],
+  "author": "NyxObscura",
+  "license": "MIT",
+  "homepage": "https://github.com/NyxObscura/javascript-obfuscator-bot#readme",
+  "bugs": {
+    "url": "https://github.com/NyxObscura/javascript-obfuscator-bot/issues"
+  }
+}
