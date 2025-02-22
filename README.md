@@ -1,129 +1,192 @@
-# JavaScript Obfuscator Bot
+---
 
-A Telegram bot designed to obfuscate JavaScript code using various obfuscation techniques. This bot allows users to upload `.js` files and receive obfuscated versions of their code. The bot supports multiple obfuscation methods, making it a versatile tool for developers who want to protect their JavaScript code.
+JavaScript Obfuscator Bot
+
+A Telegram bot designed to obfuscate JavaScript code using various advanced obfuscation techniques. This bot allows users to upload .js files and receive obfuscated versions of their code, helping developers protect their JavaScript source code from reverse engineering.
+
 
 ---
 
-## Features
+✨ Features
 
-- **Multiple Obfuscation Methods**: Choose from a variety of obfuscation techniques, including variable renaming, dead code injection, and more.
-- **Easy to Use**: Simply upload your `.js` file and select the desired obfuscation method.
-- **Secure**: The bot ensures that your code is processed securely and privately.
-- **Customizable**: The bot can be extended with additional obfuscation methods or features.
+✅ Multiple Obfuscation Methods – Supports techniques such as variable renaming, dead code injection, and more.
+✅ Easy to Use – Upload your .js file, select an obfuscation method, and receive the processed file.
+✅ Secure Processing – Ensures your code remains private and secure throughout the obfuscation process.
+✅ Customizable – Extend the bot with additional obfuscation techniques or security features.
+
 
 ---
 
-## How to Get Started
+🚀 Getting Started
 
-### Prerequisites
+Prerequisites
 
-1. **Node.js**: Ensure you have Node.js installed (version 18 or higher).
-2. **Telegram Bot Token**: You need a Telegram bot token. Follow the steps below to get one.
+Before setting up the bot, ensure you have:
 
-### Getting Your Telegram Bot Token
+1. Node.js (v18 or higher) installed.
 
-1. Open Telegram and search for **BotFather**.
-2. Start a chat with BotFather and use the `/newbot` command.
+
+2. A Telegram bot token (see instructions below).
+
+
+
+
+---
+
+🔑 Getting a Telegram Bot Token
+
+1. Open Telegram and search for BotFather.
+
+
+2. Start a chat with BotFather and use the command:
+
+/newbot
+
+
 3. Follow the instructions:
-   - Choose a name for your bot (e.g., `MyObfuscatorBot`).
-   - Choose a username for your bot (must end with `bot`, e.g., `MyObfuscatorBot_bot`).
-4. After completing the steps, BotFather will provide you with a token. Copy this token.
 
-### Setting Up the Bot
+Set a name for your bot (e.g., JS Obfuscator Bot).
+
+Choose a unique username (must end with bot, e.g., JSObfuscatorBot).
+
+
+
+4. After completing the setup, BotFather will provide you with an API token. Keep it secure.
+
+
+
+
+---
+
+⚙️ Setting Up the Bot
 
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/NyxObscura/javascript-obfuscator-bot.git
-   cd javascript-obfuscator-bot
-   ```
+
+git clone https://github.com/NyxObscura/javascript-obfuscator-bot.git
+cd javascript-obfuscator-bot
+
+
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Open the `config.js` file and replace `'PUT_YOUR_TELEGRAM_BOT_TOKEN_HERE'` with your actual bot token:
-   ```javascript
-   module.exports = {
-       TOKEN: 'YOUR_TELEGRAM_BOT_TOKEN_HERE',
-   };
-   ```
+
+npm install
+
+
+3. Configure the bot by opening config.js and replacing 'YOUR_TELEGRAM_BOT_TOKEN_HERE' with your actual bot token:
+
+module.exports = {
+    TOKEN: 'YOUR_TELEGRAM_BOT_TOKEN_HERE',
+};
+
+
 4. Start the bot:
-   ```bash
-   npm start
-   ```
+
+npm start
+
+
+
 
 ---
 
-## Deployment
+📡 Deployment
 
-### Local Deployment
+You can deploy the bot locally or on a server.
 
-1. Follow the setup instructions above.
-2. Run the bot locally using:
-   ```bash
-   npm start
-   ```
+🌐 Local Deployment
 
-### Deployment to a Server
+Follow the setup instructions above, then run:
 
-1. **Install Node.js** on your server (if not already installed).
+npm start
+
+🖥️ Deployment to a Server
+
+To deploy on a cloud server or VPS:
+
+1. Install Node.js on your server (if not already installed).
+
+
 2. Clone the repository to your server:
-   ```bash
-   git clone https://github.com/NyxObscura/javascript-obfuscator-bot.git
-   cd javascript-obfuscator-bot
-   ```
+
+git clone https://github.com/NyxObscura/javascript-obfuscator-bot.git
+cd javascript-obfuscator-bot
+
+
 3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Set up environment variables:
-   - Replace the `TOKEN` in `config.js` with your bot token.
-5. Use a process manager like **PM2** to keep the bot running:
-   ```bash
-   npm install -g pm2
-   pm2 start index.js --name "obfuscator-bot"
-   ```
-6. Ensure the bot is running:
-   ```bash
-   pm2 status
-   ```
+
+npm install
+
+
+4. Configure the bot token in config.js.
+
+
+5. Use PM2 to keep the bot running continuously:
+
+npm install -g pm2
+pm2 start index.js --name "obfuscator-bot"
+pm2 save
+pm2 status
+
+
+6. To restart the bot:
+
+pm2 restart obfuscator-bot
+
+
+
 
 ---
 
-## Important Notes
+⚠️ Important Notes
 
-- **Encrypted Main File**: The main logic file (`main.js`) in this project is encrypted to protect the obfuscation algorithms and ensure the security of the bot. Do not attempt to modify or decrypt this file.
-- **Security**: Keep your bot token secure and do not share it publicly. If your token is compromised, regenerate it using BotFather.
+Obfuscated Code Protection – The main logic file (main.js) is encrypted to protect the obfuscation algorithms. Do not attempt to modify or decrypt it.
 
----
+Security Reminder – Never share your Telegram bot token publicly. If compromised, regenerate it using BotFather.
 
-## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes.
-4. Submit a pull request.
 
 ---
 
-## License
+🛠️ Contributing
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+Contributions are welcome! To contribute:
+
+1. Fork this repository.
+
+
+2. Create a new branch for your feature or bug fix.
+
+
+3. Commit your changes with descriptive messages.
+
+
+4. Submit a pull request for review.
+
+
+
 
 ---
 
-## Support
+📜 License
 
-If you encounter any issues or have questions, please open an issue on the [GitHub Issues page](https://github.com/NyxObscura/javascript-obfuscator-bot/issues).
+This project is licensed under the MIT License. See the LICENSE file for details.
 
----
-
-## Acknowledgments
-
-- Thanks to the creators of the `js-confuser` library for providing powerful obfuscation tools.
-- Special thanks to the Telegram team for their excellent bot platform.
 
 ---
 
-Enjoy using the **JavaScript Obfuscator Bot**! 🚀
+📞 Support
+
+If you encounter issues or have questions, please open an issue on the GitHub Issues page.
+
+
+---
+
+🙌 Acknowledgments
+
+js-confuser library for providing robust obfuscation tools.
+
+Telegram team for their excellent bot platform.
+
+
+Enjoy using JavaScript Obfuscator Bot! 🚀
+
+
+---
