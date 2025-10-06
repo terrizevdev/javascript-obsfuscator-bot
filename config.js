@@ -14,5 +14,5 @@ Note: Keep your token secure and do not share it publicly.
 */
 
 module.exports = {
-    TOKEN: 'PUT_YOUR_TELEGRAM_BOT_TOKEN_HERE', // Replace with your actual bot token
+    TOKEN: '7940957372:AAFcBwRzvc9Pp7lmwPoiRxcnbhXSwu0pnLY', // Replace with your actual bot token
 };
